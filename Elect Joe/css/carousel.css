@@ -1,0 +1,299 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  font-size: 16px;
+  color: #dfdfdf;
+  font-family: 'Amiri', serif;
+  background: linear-gradient(
+                       rgba(20,20,20, .95),
+                       rgba(20,20,20, .95)),
+                       url('img/bg.jpg') repeat 50% 50% fixed;
+
+}
+
+#carousel img{
+  color:  linear-gradient(
+                       rgba(20,20,20, .90),
+                       rgba(20,20,20, .90));
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+ /*Special class on .container surrounding .navbar, used for positioning it into place. */
+
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+figcaption {
+  font-size: 12px;
+  color: rgb(113, 113, 113);
+  margin-left: 16px;
+}
+
+#navbar {
+  color: rgb(250, 250, 250);
+
+}
+
+#navbar a {
+  color: rgb(250, 250, 250);
+
+}
+
+
+#navbar:hover {
+  color: rgb(85, 97, 254);
+}
+
+#social-nav {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#social-nav:hover {
+  color: rgb(85, 97, 254);
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 700px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  /*margin-bottom: -5px;*/
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 700px;
+  background-color: #a7a7a7;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+  -webkit-transition: 1s ease-in-out left;
+  -moz-transition: 1s ease-in-out left;
+  -o-transition: 1s ease-in-out left;
+  transition: 1s ease-in-out left;
+}
+
+/*.carousel-inner > .item {
+    position: relative;
+    display: none;
+    -webkit-transition: 1s ease-in-out left;
+    -moz-transition: 1s ease-in-out left;
+    -o-transition: 1s ease-in-out left;
+    transition: 1s ease-in-out left;
+}*/
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#headshot {
+  padding-top: 9em;
+}
+
+#intro-hc {
+  font-size: 35px;
+
+}
+
+#about {
+  margin-top: -3em;
+}
+
+#comm-caro h1 p{
+  margin-bottom: -10px;
+}
+
+#issues {
+  font-size: 4.3em;
+  margin-bottom: 1em;
+}
+
+#support {
+  color: rgb(98, 127, 215);
+
+}
+
+#infra {
+  margin-top: -5em;
+}
+
+#roads {
+  margin-top: 8em;
+}
+
+#volunteer {
+  margin-left: 150px;
+}
+
+#contact {
+  font-size: 18px;
+}
+
+#social-contact {
+  padding-top: 10px;
+}
+
+#donate {
+  margin-top: 50px;
+
+}
+
+#matt {
+  color: rgb(175, 175, 175);
+}
+#matt:hover {
+  color: rgb(42, 180, 189);
+}
+
+#matt-donate {
+  margin-right: 5px;
+  margin-top: 3em;
+}
+
+#elecrep {
+  margin-left: 245px;
+}
+
+#elecrepdesc {
+  margin-top: 1.5em
+}
+
+#address {
+  font-size: 1.35em;
+  margin-top: 1em;
+}
+
+#or {
+  font-size: 1.5em;
+
+}
+
+#donate {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#donate-bott {
+  margin-top: 1em;
+}
+
+#k9 {
+  margin-top: 8em;
+}
+
+#police {
+  margin-top: -5em;
+}
+
+footer {
+  /*margin-top: -2em;*/
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  #noshowmobile #k9 #roads {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
